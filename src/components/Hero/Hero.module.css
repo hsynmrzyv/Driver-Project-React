@@ -1,0 +1,125 @@
+.hero {
+  background: url("https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80")
+    no-repeat center/cover;
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+.hero form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  margin-top: 10%;
+  padding: 6px 15px;
+  background-color: rgba(247, 247, 247, 0.9);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.9);
+  border-radius: 25px;
+}
+
+.hero form label {
+  font-size: 0.8rem;
+  padding-bottom: 2px;
+}
+
+.hero form input {
+  background-color: transparent;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero form input:focus {
+  outline: none;
+}
+
+.hero form .input_text {
+  width: 300px;
+  font-size: 1rem;
+}
+
+.from,
+.until {
+  border-left: 1px solid #333;
+  padding-left: 6px;
+}
+
+.text,
+.from,
+.until {
+  display: flex;
+  flex-direction: column;
+}
+
+.search_btn .btn {
+  display: none;
+}
+
+.search_btn {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 720px) {
+  .hero form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: auto 1rem;
+  }
+
+  .text,
+  .from,
+  .until {
+    width: 100%;
+    padding: 0.2rem;
+  }
+
+  .from,
+  .until {
+    border-left: none;
+  }
+
+  .input_text {
+    font-size: 0.8rem;
+  }
+
+  .border {
+    border-top: 1px solid #333;
+    padding: 8px;
+  }
+
+  .hero form label {
+    padding: 0.4rem 0;
+  }
+
+  .search_btn {
+    width: 100%;
+    border-top: 1px solid #333;
+    padding: 8px 0;
+  }
+
+  .search_btn .btn {
+    display: block;
+    background-color: #593cfb;
+    color: #fff;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    margin: 05rem 0;
+    cursor: pointer;
+    padding: 12px;
+    transition: all 1s linear;
+  }
+
+  .search_btn .btn:hover {
+    background-color: #4733b7;
+  }
+
+  .icon {
+    display: none;
+  }
+}
